@@ -1,0 +1,38 @@
+<section>
+    <!--Spacer-->
+    <div class="ptf-spacer" style=" --ptf-xxl: 15rem; --ptf-md: 5rem;"></div>
+    <div class="container-xxl">
+        <div class="row">
+            <div class="col-lg-3">
+                <!--Animated Block-->
+                <div class="ptf-animated-block" data-aos="fade" data-aos-delay="0">
+                    <h1 class="large-heading">Our <%- titleTwo %> Services</h1>
+                    <!--Spacer-->
+                    <div class="ptf-spacer" style=" --ptf-xxl: 2.5rem;"></div>
+                    <%- textDesc %>
+                </div>
+                <!--Spacer-->
+                <div class="ptf-spacer" style=" --ptf-lg: 4.375rem; --ptf-md: 2.1875rem;"></div>
+            </div>
+            <div class="col-lg-8 offset-lg-1">
+                <% for(var i=0; i<services.length; i++) {%>
+                <!--Animated Block-->
+                <div class="ptf-animated-block" data-aos="fade" data-aos-delay="0">
+                    <!--Services Box-->
+                    <div class="ptf-service-box ">
+                        <a class="ptf-service-box__link" href="<%- serviceLinks[i] %>"></a>
+                        <div class="ptf-service-box__icon"><i class="<%= serviceIcon[i] %>"></i></div>
+                        <h5 class="ptf-service-box__title"><%= services[i] %></h5>
+                        <div class="ptf-service-box__content">
+                            <p><%= snipText[i] %></p>
+                        </div>
+                        <div class="ptf-service-box__arrow"><i class="lnil lnil-chevron-right"></i></div>
+                    </div>
+                </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+    <!--Spacer-->
+    <div class="ptf-spacer" style=" --ptf-xxl: 10rem; --ptf-md: 5rem;"></div>
+</section>
