@@ -94,7 +94,12 @@ app.get('/services/advertising', (req, res) => {
 app.get('/services/advertising/campaigns', (req, res) => {
     res.render('pages/service-details', {
         title: 'Campaigns',
-        layout: './layouts/sidebarThree'
+        layout: './layouts/sidebarThree',
+        textDesc: '<h3 class="ptf-widget-title">Earning the trust and respect of your customers takes more than just a catchy slogan or a well-designed logo. Creating a campaign that stands out and consistently engages your audience is a great way of gaining customer loyalty.</h3><p class="fz-18">Creativity is at the heart of every advertising campaign we produce.</p> <p class="fz-18">For a campaign to be successful and fully engage an audience, exciting creative ideas need to be combined with the right media channel. Whether its online, social media, print, transport or outdoor advertising, selecting the proper channels to promote a product or service is crucial to a successful campaign.</p> <p class="fz-18">Understanding your target audience and their behavior can dictate how best to connect with them and in turn, which channels to communicate through.</p>',
+        heroImg: '',
+        serviceList: ['Online Advertising', 'Print Advertising'],
+        serviceLinks: ['/services/advertising/online-advertising', '/services/advertising/print-advertising'],
+        serviceIcon: ['lnil lnil-add-files', 'lnil lnil-add-files'],
     })
 })
 
@@ -102,7 +107,12 @@ app.get('/services/advertising/campaigns', (req, res) => {
 app.get('/services/advertising/online-advertising', (req, res) => {
     res.render('pages/service-details', {
         title: 'Online Advertising',
-        layout: './layouts/sidebarThree'
+        layout: './layouts/sidebarThree',
+        textDesc: '<h3 class="ptf-widget-title">Online advertising is one of the most effective ways to engage with your target audience, boost traffic to your website, and enhance your brand’s visibility.</h3><p class="fz-18">Compared to traditional forms of advertising, it is highly efficient to communicate with your audience in the central part due to the potential to target a specific demographic. The ability to target by age, gender, and geographic location are just a few of the ways we can engage with your particular audience.</p> <p class="fz-18">Furthermore, retargeting allows us to track people who visit your site and display retargeted adverts to them as they visit other sites online.</p> <p class="fz-18">The ability to measure the success of online advertising is invaluable in addition to its unique targeting capabilities. With pay-per-click advertising (PPC), you only pay when people click on your advert, and it is therefore easy to track how an advert is performing. Display or web banner advertising offers the opportunity to visually engage your audience and deliver a clear message that, again, is easily measured.</p><p class="fz-18">From engaging banner adverts to PPC, we can manage your online advertising strategy to optimize your return on investment and ensure it resonates with your target audience.</p>',
+        heroImg: '',
+        serviceList: ['Campaigns', 'Print Advertising'],
+        serviceLinks: ['/services/advertising/campaigns', '/services/advertising/print-advertising'],
+        serviceIcon: ['lnil lnil-scan', 'lnil lnil-add-files'],
     })
 })
 
@@ -110,7 +120,12 @@ app.get('/services/advertising/online-advertising', (req, res) => {
 app.get('/services/advertising/print-advertising', (req, res) => {
     res.render('pages/service-details', {
         title: 'Print Advertising',
-        layout: './layouts/sidebarThree'
+        layout: './layouts/sidebarThree',
+        textDesc: '<h3 class="ptf-widget-title">With brands and businesses continuing to shift their marketing efforts to digital platforms, many question whether print advertising is still relevant.</h3><p class="fz-18">The fact is print advertising continues to be an invaluable medium for brands looking to connect with their target audience. The tactile characteristics of a printed publication offer an engaging experience unparalleled by online advertising.</p> <p class="fz-18">Despite this, print advertising is highly competitive, so it is crucial to ensure your advert stands out from the crowd and instantly captures readers’ attention. An eye-catching headline and compelling imagery, combined with a clear call to action, prompt a reaction from readers.</p> <p class="fz-18">On top of this, a clear strategy is key to maximizing the impact of your campaign. We specialize in planning and producing print advertising that is not only on brand but appeals and engages your target audience. If you’re thinking of commissioning an agency to come up with a big idea and design a successful print advertising campaign for your brand, please don’t hesitate to contact us.</p>',
+        heroImg: '',
+        serviceList: ['Campaigns', 'Online Advertising'],
+        serviceLinks: ['/services/advertising/campaigns', '/services/advertising/online-advertising'],
+        serviceIcon: ['lnil lnil-scan', 'lnil lnil-add-files'],
     })
 })
 
@@ -138,7 +153,12 @@ app.get('/services/branding', (req, res) => {
 app.get('/services/branding/brand-guidelines', (req, res) => {
     res.render('pages/service-details', {
         title: 'Branding Guidelines',
-        layout: './layouts/sidebarThree'
+        layout: './layouts/sidebarThree',
+        textDesc: '<h3 class="ptf-widget-title">With brands and businesses continuing to shift their marketing efforts to digital platforms, many question whether print advertising is still relevant.</h3><p class="fz-18">The fact is print advertising continues to be an invaluable medium for brands looking to connect with their target audience. The tactile characteristics of a printed publication offer an engaging experience unparalleled by online advertising.</p> <p class="fz-18">Despite this, print advertising is highly competitive, so it is crucial to ensure your advert stands out from the crowd and instantly captures readers’ attention. An eye-catching headline and compelling imagery, combined with a clear call to action, prompt a reaction from readers.</p> <p class="fz-18">On top of this, a clear strategy is key to maximizing the impact of your campaign. We specialize in planning and producing print advertising that is not only on brand but appeals and engages your target audience. If you’re thinking of commissioning an agency to come up with a big idea and design a successful print advertising campaign for your brand, please don’t hesitate to contact us.</p>',
+        heroImg: '',
+        serviceList: ['Campaigns', 'Online Advertising'],
+        serviceLinks: ['/services/advertising/campaigns', '/services/advertising/online-advertising'],
+        serviceIcon: ['lnil lnil-scan', 'lnil lnil-add-files'],
     })
 })
 
@@ -146,7 +166,12 @@ app.get('/services/branding/brand-guidelines', (req, res) => {
 app.get('/services/branding/brand-identity', (req, res) => {
     res.render('pages/service-details', {
         title: 'Brand Identity',
-        layout: './layouts/sidebarThree'
+        layout: './layouts/sidebarThree',
+        textDesc: '<h3 class="ptf-widget-title">With brands and businesses continuing to shift their marketing efforts to digital platforms, many question whether print advertising is still relevant.</h3><p class="fz-18">The fact is print advertising continues to be an invaluable medium for brands looking to connect with their target audience. The tactile characteristics of a printed publication offer an engaging experience unparalleled by online advertising.</p> <p class="fz-18">Despite this, print advertising is highly competitive, so it is crucial to ensure your advert stands out from the crowd and instantly captures readers’ attention. An eye-catching headline and compelling imagery, combined with a clear call to action, prompt a reaction from readers.</p> <p class="fz-18">On top of this, a clear strategy is key to maximizing the impact of your campaign. We specialize in planning and producing print advertising that is not only on brand but appeals and engages your target audience. If you’re thinking of commissioning an agency to come up with a big idea and design a successful print advertising campaign for your brand, please don’t hesitate to contact us.</p>',
+        heroImg: '',
+        serviceList: ['Campaigns', 'Online Advertising'],
+        serviceLinks: ['/services/advertising/campaigns', '/services/advertising/online-advertising'],
+        serviceIcon: ['lnil lnil-scan', 'lnil lnil-add-files'],
     })
 })
 
@@ -154,7 +179,12 @@ app.get('/services/branding/brand-identity', (req, res) => {
 app.get('/services/branding/brand-strategy', (req, res) => {
     res.render('pages/service-details', {
         title: 'Brand Strategy',
-        layout: './layouts/sidebarThree'
+        layout: './layouts/sidebarThree',
+        textDesc: '<h3 class="ptf-widget-title">With brands and businesses continuing to shift their marketing efforts to digital platforms, many question whether print advertising is still relevant.</h3><p class="fz-18">The fact is print advertising continues to be an invaluable medium for brands looking to connect with their target audience. The tactile characteristics of a printed publication offer an engaging experience unparalleled by online advertising.</p> <p class="fz-18">Despite this, print advertising is highly competitive, so it is crucial to ensure your advert stands out from the crowd and instantly captures readers’ attention. An eye-catching headline and compelling imagery, combined with a clear call to action, prompt a reaction from readers.</p> <p class="fz-18">On top of this, a clear strategy is key to maximizing the impact of your campaign. We specialize in planning and producing print advertising that is not only on brand but appeals and engages your target audience. If you’re thinking of commissioning an agency to come up with a big idea and design a successful print advertising campaign for your brand, please don’t hesitate to contact us.</p>',
+        heroImg: '',
+        serviceList: ['Campaigns', 'Online Advertising'],
+        serviceLinks: ['/services/advertising/campaigns', '/services/advertising/online-advertising'],
+        serviceIcon: ['lnil lnil-scan', 'lnil lnil-add-files'],
     })
 })
 
@@ -162,7 +192,12 @@ app.get('/services/branding/brand-strategy', (req, res) => {
 app.get('/services/branding/infographic-design', (req, res) => {
     res.render('pages/service-details', {
         title: 'Infographic Design',
-        layout: './layouts/sidebarThree'
+        layout: './layouts/sidebarThree',
+        textDesc: '<h3 class="ptf-widget-title">With brands and businesses continuing to shift their marketing efforts to digital platforms, many question whether print advertising is still relevant.</h3><p class="fz-18">The fact is print advertising continues to be an invaluable medium for brands looking to connect with their target audience. The tactile characteristics of a printed publication offer an engaging experience unparalleled by online advertising.</p> <p class="fz-18">Despite this, print advertising is highly competitive, so it is crucial to ensure your advert stands out from the crowd and instantly captures readers’ attention. An eye-catching headline and compelling imagery, combined with a clear call to action, prompt a reaction from readers.</p> <p class="fz-18">On top of this, a clear strategy is key to maximizing the impact of your campaign. We specialize in planning and producing print advertising that is not only on brand but appeals and engages your target audience. If you’re thinking of commissioning an agency to come up with a big idea and design a successful print advertising campaign for your brand, please don’t hesitate to contact us.</p>',
+        heroImg: '',
+        serviceList: ['Campaigns', 'Online Advertising'],
+        serviceLinks: ['/services/advertising/campaigns', '/services/advertising/online-advertising'],
+        serviceIcon: ['lnil lnil-scan', 'lnil lnil-add-files'],
     })
 })
 
@@ -170,7 +205,12 @@ app.get('/services/branding/infographic-design', (req, res) => {
 app.get('/services/branding/logo-design', (req, res) => {
     res.render('pages/service-details', {
         title: 'Logo Design',
-        layout: './layouts/sidebarThree'
+        layout: './layouts/sidebarThree',
+        textDesc: '<h3 class="ptf-widget-title">With brands and businesses continuing to shift their marketing efforts to digital platforms, many question whether print advertising is still relevant.</h3><p class="fz-18">The fact is print advertising continues to be an invaluable medium for brands looking to connect with their target audience. The tactile characteristics of a printed publication offer an engaging experience unparalleled by online advertising.</p> <p class="fz-18">Despite this, print advertising is highly competitive, so it is crucial to ensure your advert stands out from the crowd and instantly captures readers’ attention. An eye-catching headline and compelling imagery, combined with a clear call to action, prompt a reaction from readers.</p> <p class="fz-18">On top of this, a clear strategy is key to maximizing the impact of your campaign. We specialize in planning and producing print advertising that is not only on brand but appeals and engages your target audience. If you’re thinking of commissioning an agency to come up with a big idea and design a successful print advertising campaign for your brand, please don’t hesitate to contact us.</p>',
+        heroImg: '',
+        serviceList: ['Campaigns', 'Online Advertising'],
+        serviceLinks: ['/services/advertising/campaigns', '/services/advertising/online-advertising'],
+        serviceIcon: ['lnil lnil-scan', 'lnil lnil-add-files'],
     })
 })
 
@@ -178,7 +218,12 @@ app.get('/services/branding/logo-design', (req, res) => {
 app.get('/services/branding/rebranding', (req, res) => {
     res.render('pages/service-details', {
         title: 'Rebranding',
-        layout: './layouts/sidebarThree'
+        layout: './layouts/sidebarThree',
+        textDesc: '<h3 class="ptf-widget-title">With brands and businesses continuing to shift their marketing efforts to digital platforms, many question whether print advertising is still relevant.</h3><p class="fz-18">The fact is print advertising continues to be an invaluable medium for brands looking to connect with their target audience. The tactile characteristics of a printed publication offer an engaging experience unparalleled by online advertising.</p> <p class="fz-18">Despite this, print advertising is highly competitive, so it is crucial to ensure your advert stands out from the crowd and instantly captures readers’ attention. An eye-catching headline and compelling imagery, combined with a clear call to action, prompt a reaction from readers.</p> <p class="fz-18">On top of this, a clear strategy is key to maximizing the impact of your campaign. We specialize in planning and producing print advertising that is not only on brand but appeals and engages your target audience. If you’re thinking of commissioning an agency to come up with a big idea and design a successful print advertising campaign for your brand, please don’t hesitate to contact us.</p>',
+        heroImg: '',
+        serviceList: ['Campaigns', 'Online Advertising'],
+        serviceLinks: ['/services/advertising/campaigns', '/services/advertising/online-advertising'],
+        serviceIcon: ['lnil lnil-scan', 'lnil lnil-add-files'],
     })
 })
 

@@ -46,18 +46,6 @@
 									<div class="ptf-animated-block" data-aos="fade" data-aos-delay="0">
 										<h1 class="large-heading"><%- title %></h1>
 										<!--Spacer-->
-										<div class="ptf-spacer" style=" --ptf-xxl: 2.5rem;"></div>
-										<p class="fz-18">Our skilled and creative UX/UI development team has over 10 years of proven experience in web application development. We definitely know how end-users interact with apps and how to create an easy-to-use user interface that offers an enjoyable experience for your target audience.</p>
-									</div>
-									<!--Spacer-->
-									<div class="ptf-spacer" style=" --ptf-xxl: 6.25rem; --ptf-md: 3.125rem;"></div>
-								</div>
-								<div class="col-lg-12">
-									<!--Animated Block-->
-									<div class="ptf-animated-block" data-aos="fade" data-aos-delay="0">
-										<!--Simple Image-->
-										<div class="ptf-simple-image"><a href="../../img/service-detail.png" data-fancybox rel="nofollow"><img src="../../img/service-detail.png" alt="" loading="lazy"></a>
-										</div>
 									</div>
 								</div>
 							</div>
@@ -71,56 +59,11 @@
 								<div class="col-xl-8">
 									<!--Animated Block-->
 									<div class="ptf-animated-block" data-aos="fade" data-aos-delay="0">
-										<p class="fz-18">Encouraging the use of natural systems and processes in design allows for exposure to nature, and in turn, these design approaches improve health and wellbeing. There are a number of possible benefits, including reduced heart rate variability and pulse rates, decreased blood pressure, and increased activity in our nervous systems, to name a few.</p>
+										<%- textDesc %>
 									</div>
 									<!--Spacer-->
-									<div class="ptf-spacer" style=" --ptf-xxl: 4.375rem;"></div>
-									<!--Animated Block-->
-									<div class="ptf-animated-block" data-aos="fade" data-aos-delay="0">
-										<h3>Specialization</h3>
-										<!--Spacer-->
-										<div class="ptf-spacer" style=" --ptf-xxl: 1.875rem;"></div>
-										<p class="fz-18">Encouraging the use of natural systems and processes in design allows for exposure to nature, and in turn, these design approaches improve health and wellbeing.</p>
-									</div>
 									<!--Spacer-->
-									<div class="ptf-spacer" style=" --ptf-xxl: 3.125rem;"></div>
-									<div class="row" style="--bs-gutter-x: 3.75rem; --bs-gutter-y: 7.5rem">
-										<div class="col-12 col-sm-6 col-md-4">
-											<!--Animated Block-->
-											<div class="ptf-animated-block" data-aos="fade" data-aos-delay="0">
-												<!--Counter Up-->
-												<div class="ptf-counter-up ptf-counter-up--style-3" style="--ptf-title-color: var(--ptf-color-black);">
-													<h5 class="ptf-counter-up__title">Website design and <br>development</h5>
-													<div class="ptf-counter-up__value" data-prefix="" data-suffix="%">95
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-md-4">
-											<!--Animated Block-->
-											<div class="ptf-animated-block" data-aos="fade" data-aos-delay="100">
-												<!--Counter Up-->
-												<div class="ptf-counter-up ptf-counter-up--style-3" style="--ptf-title-color: var(--ptf-color-black);">
-													<h5 class="ptf-counter-up__title">iOs & Android mobile <br>application</h5>
-													<div class="ptf-counter-up__value" data-prefix="" data-suffix="%">98
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-md-4">
-											<!--Animated Block-->
-											<div class="ptf-animated-block" data-aos="fade" data-aos-delay="200">
-												<!--Counter Up-->
-												<div class="ptf-counter-up ptf-counter-up--style-3" style="--ptf-title-color: var(--ptf-color-black);">
-													<h5 class="ptf-counter-up__title">Hosting, domain & <br>support</h5>
-													<div class="ptf-counter-up__value" data-prefix="" data-suffix="%">90
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!--Spacer-->
-									<div class="ptf-spacer" style=" --ptf-xxl: 6.875rem;"></div>
+									<div class="ptf-spacer" style=" --ptf-xxl: 5rem;"></div>
 									<!--Animated Block-->
 									<div class="ptf-animated-block" data-aos="fade" data-aos-delay="0">
 										<h3>Our Skills</h3>
@@ -229,12 +172,12 @@
 										<div class="ptf-widget ptf-widget-services-list">
 											<!--Animated Block-->
 											<div class="ptf-animated-block" data-aos="fade" data-aos-delay="0">
-												<h4 class="ptf-widget-title">Services List</h4>
+												<h4 class="ptf-widget-title">
+													Other Services</h4>
 												<ul>
-													<li><a href="#"><i class="lnil lnil-cup"></i> Brand Consultant</a></li>
-													<li><a href="#"><i class="lnil lnil-website-rank"></i> UI/UX Solution</a></li>
-													<li><a href="#"><i class="lnil lnil-3d"></i> Packaging</a></li>
-													<li><a href="#"><i class="lnil lnil-video-camera-alt-1"></i> Motion Video & TVC</a></li>
+													<% for(var i=0; i<serviceList.length; i++) {%>
+													<li><a href="<%- serviceLinks[i] %>"><i class="<%- serviceIcon[i] %>"></i><%- serviceList[i] %></a></li>
+													<% } %>
 												</ul>
 											</div>
 										</div>
@@ -270,7 +213,7 @@
 							<div class="ptf-divider" style="--ptf-height: 1px; --ptf-color: var(--ptf-color-14);"></div>
 						</div>
 					</section>
-					<%- include('../partials/latestProjects.ejs') %>
+					<%- include('../partials/latestProjectsTwo.ejs') %>
 				</article>
             </main>
             
