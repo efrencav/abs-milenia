@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="no-js ptf-is--header-style-3 ptf-is--footer-style-1 ptf-is--custom-cursor ptf-is--footer-fixed" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Abstract Creative | <%- title %></title>
+	<meta name="description" content="Abstract Creative is a creative, branding, and digital design studio in Houston, Texas.">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--Favicon-->
+	<link rel="icon" type="image/png" href="../../img/root/favicon.png">
+	<!--Framework-->
+	<link rel="stylesheet" href="../../css/framework/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="../../css/framework/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="../../css/framework/bootstrap-utilities.min.css">
+	<!--Plugins-->
+	<link rel="stylesheet" href="../../css/ptf-plugins.min.css">
+	<!--Fonts-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri&amp;display=swap">
+	<link rel="stylesheet" href="../../fonts/CerebriSans/style.css">
+	<!--Icons-->
+	<link rel="stylesheet" href="../../fonts/LineIcons-PRO/WebFonts/Pro-Light/font-css/LinIconsPro-Light.css">
+	<link rel="stylesheet" href="../../fonts/LineIcons-PRO/WebFonts/Pro-Regular/font-css/LineIcons.css">
+	<link rel="stylesheet" href="../../fonts/Socicons/socicon.css">
+	<!--Style-->
+	<link rel="stylesheet" href="../../css/ptf-main.min.css">
+	<!--Custom-->
+	<link rel="stylesheet" href="../../css/custom.css">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <%- include('../partials/headerThree.ejs') %>
+        <main class="ptf-main">
+            <article class="ptf-page ptf-page--blog-masonry">
+                <section>
+                    <!--Spacer-->
+                    <div class="ptf-spacer" style=" --ptf-xxl: 10rem; --ptf-md: 5rem;"></div>
+                    <div class="container-xxl">
+                        <div class="row">
+                            <div class="col-xl-10">
+                                <!--Animated Block-->
+                                <div class="ptf-animated-block" data-aos="fade" data-aos-delay="0">
+                                    <h1 class="large-heading"><%- title %></h1>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Spacer-->
+                        <div class="ptf-spacer" style=" --ptf-xxl: 4.375rem;"></div>
+                    </div>
+                    <div class="container-xxl">
+                        <div class="row align-items-center">
+                            <div class="col-xl-8">
+                                <!--Animated Block-->
+                                <div class="ptf-animated-block" data-aos="fade" data-aos-delay="0">
+                                    <ul class="ptf-filters ptf-filters--style-2" id="ptf-filter-masonry">
+                                        <li class="filter-item filter-item-active" data-filter="*">All</li>
+                                        <li class="filter-item" data-filter=".filter-1">Advertising</li>
+                                        <li class="filter-item" data-filter=".filter-2">Branding</li>
+                                        <li class="filter-item" data-filter=".filter-3">Digital</li>
+                                        <li class="filter-item" data-filter=".filter-4">Print</li>
+                                    </ul>
+                                </div>
+                                <!--Spacer-->
+                                <div class="ptf-spacer" style=" --ptf-xl: 3.75rem; --ptf-md: 1.875rem;"></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!--Spacer-->
+                    <div class="ptf-spacer" style=" --ptf-xxl: 6.25rem; --ptf-md: 3.125rem;"></div>
+                    
+                    <%- include('../partials/news.ejs') %>
+
+                    <!--Spacer-->
+                    <div class="ptf-spacer" style=" --ptf-xxl: 10rem; --ptf-md: 5rem;"></div>
+                </section>
+                <section>
+                    <div class="container-xxl">
+                        <!--Divider-->
+                        <div class="ptf-divider" style="--ptf-height: 1px; --ptf-color: var(--ptf-color-14);"></div>
+                    </div>
+                </section>
+            </article>
+        </main>
+    </div>
+	<!--Libs-->
+	<script src="../../scripts/ptf-plugins.min.js"></script>
+	<script src="../../scripts/ptf-helpers.js"></script>
+	<script src="../../scripts/ptf-controllers.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!--Post Header-->
+<div class="ptf-spacer" style=" --ptf-xxl: 5rem; --ptf-md: 5rem;"></div>
+
+<header class="ptf-single-post__header ptf-single-post__header--style-1">
+    <div class="container-xxl">
+        <h1 class="ptf-single-post__title"><%- title %></h1>
+        <div class="ptf-single-post__meta"><span class="cat"><%- category %></span><span class="date"><%- date %></span></div>
+    </div>
+</header>
+<!--Post Media-->
+<div class="ptf-single-post__media">
+    <div class="container-xxl"><img src="/img/blog/single-post/post-media-1.png" alt="" loading="lazy"></div>
+</div>
+<!--Post Wrapper-->
+<div class="ptf-single-post__wrapper">
+    <div class="container-xxl">
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2">
+                
+                <!--Post Excerpt-->
+                <div class="ptf-single-post__excerpt"><%- newsExcerpt %></div>
+                <!--Post Content-->
+                <div class="ptf-single-post__content">
+                    <%- newsText %>
+                    <!--Spacer-->
+                    <div class="ptf-spacer" style=" --ptf-xxl: 5rem; --ptf-md: 2.5rem;"></div>
+                    <div class="row alignwide" style="--bs-gutter-y: 2rem;">
+                        <div class="col-6">
+                            <!--Simple Image-->
+                            <div class="ptf-simple-image"><a href="<%- img %>" data-fancybox rel="nofollow"><img src="<%- img %>" alt="" loading="lazy"></a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <!--Simple Image-->
+                            <div class="ptf-simple-image"><a href="<%- imgTwo %>" data-fancybox rel="nofollow"><img src="<%- imgTwo %>" alt="" loading="lazy"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Spacer-->
+                    <div class="ptf-spacer" style=" --ptf-xxl: 5rem; --ptf-md: 2.5rem;"></div>
+                    <%- newsTextTwo %>
+                </div>
+                <!--Related Posts-->
+                <div class="ptf-related-posts">
+                    <h2 class="ptf-related-posts__title">Related Posts</h2>
+                    <div class="ptf-isotope-grid" data-columns="2" data-layout="fitRows" data-x-gap="60" data-y-gap="70">
+                        <div class="grid-sizer">
+                            <div class=" grid-item filter-1 filter-4">
+                                <!--Blog Post-->
+                                <article class="ptf-post ptf-post--style-1">
+                                    <div class="ptf-post__media"><a class="ptf-work__link" href="single-post.html"></a><img src="/img/blog/grid/post-1.png" alt="" loading="lazy">
+                                    </div>
+                                    <div class="ptf-post__content">
+                                        <header class="ptf-post__header">
+                                            <div class="ptf-post__meta"><span class="cat">Product</span><span class="date">Dec 15, 2021</span>
+                                            </div>
+                                            <h3 class="ptf-post__title"><a href="single-post.html">Review product BWIB</a>
+                                            </h3>
+                                        </header>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class=" grid-item filter-1 filter-4">
+                                <!--Blog Post-->
+                                <article class="ptf-post ptf-post--style-1">
+                                    <div class="ptf-post__media"><a class="ptf-work__link" href="single-post.html"></a><img src="/img/blog/grid/post-2.png" alt="" loading="lazy">
+                                    </div>
+                                    <div class="ptf-post__content">
+                                        <header class="ptf-post__header">
+                                            <div class="ptf-post__meta"><span class="cat">Inspiration</span><span class="date">Dec 7, 2021</span>
+                                            </div>
+                                            <h3 class="ptf-post__title"><a href="single-post.html">Contrast in Brand Design</a>
+                                            </h3>
+                                        </header>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Post Navigation-->
+                <div class="ptf-post-navigation ptf-post-navigation--style-1"><span>Next Post</span><a class="h1 ptf-filled-link" href="single-post.html">Minimalist Trends</a></div>
+            </div>
+        </div>
+    </div>
+</div>

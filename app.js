@@ -44,10 +44,55 @@ app.get('/about', (req, res) => {
     })
 })
 
-app.get('/news', (req, res) => {
-    res.render('pages/about', {
-        title: 'News Page',
+// ============ NEWS ============
+app.get('/news/', (req, res) => {
+    res.render('pages/news', {
+        title: 'News',
+        filter: ['filter-4', 'filter-3', 'filter-3', 'filter-1'],
+        category: ['Print', 'Branding', 'Branding', 'Advertising'],
+        date: ['Dec 15, 2021', 'Dec 15, 2021', 'Dec 15, 2021', 'Dec 15, 2021'],
+        newsTitle: ['Importance of Brochures for Business Marketing', 'Benefits of Rebranding', 'Graphic Design Is Important To You More Than You Think', 'Tips For Designing a Brochure'],
+        news: ['The brochures of any business actually forms an integral part of printed marketing', 'The brochures of any business actually forms an integral part of printed marketing', 'The brochures of any business actually forms an integral part of printed marketing', 'The brochures of any business actually forms an integral part of printed marketing'],
+        newsUrl: ['/news/business-marketing', '/news/rebranding-benefits', '/news', '/news'],
+        img: ['img/blog/masonry/post-1.png', 'img/blog/masonry/post-2.png', 'img/blog/masonry/post-3.png', 'img/blog/masonry/post-4.png'],
         companyName: 'Abstract',
+        layout: './layouts/news'
+    })
+})
+
+// Business Marketing Brochure
+app.get('/news/business-marketing', (req, res) => {
+    res.render('pages/newsPost', {
+        title: 'Importance of Brochures for Business Marketing',
+        category: 'Print',
+        date: 'Dec 15, 2021',
+        newsExcerpt: '<div class="ptf-single-post__excerpt">The <span class="has-accent-1">brochure</span>s of any business actually forms an integral part of printed marketing in spite the increasing popularity of online marketing strategies. A good-looking brochure is a very necessary item for every business, it actually helps the businesses to grow.</div>',
+        newsText: ['<p>Let\’s check out a few reasons that indicates that companies must invest in the brochure designing:</p><ul style="line-height: 2;"><li>The brochures can aid in capturing the attention of your potential customers, specifically in case your business is small or new and you are low on budget</li><li>Brochures are pocket friendly and effective as compared to any other marketing strategy. Your ads in the newspaper or magazine in a prime section will be very costly. The space of advertisement will shared by different businesses and thus, it will be tough to stand out</li><li>The booklets and the brochures, can actually focus completely on the offerings of the business, hence grabs the attention of the potential customers who look through them. The only thing that you need to do is to include informative and interesting content in the brochure and the images must be appropriate and call to action must be incorporated.</li><li>Brochures are very versatile and they can be used for any type of products and services and for different places in your office, like reception desk, your own cabin or may be in a promotional event.</li></ul><div class="ptf-spacer" style=" --ptf-xxl: 1.875rem;"></div><p>So, now you know how much <a class="text-decoration-underline has-accent-4" href="/services/print/brochure-design">brochure</a> design in Houston is important for your business.</p>'],
+        newsTextTwo: '',
+        img: '/img/blog/single-post/content-image-1.png',
+        imgOne: '/img/blog/single-post/content-image-2.png',
+        imgTwo: '/img/blog/single-post/content-image-2.png',
+        url: '/news',
+        companyName: 'Abstract',
+        layout: './layouts/newsPost'
+    })
+})
+
+// Rebranding Benefits
+app.get('/news/rebranding-benefits', (req, res) => {
+    res.render('pages/newsPost', {
+        title: 'Benefits Of Rebranding',
+        category: 'Branding',
+        date: 'Dec 15, 2021',
+        newsExcerpt: '<div class="ptf-single-post__excerpt">The trends in the marketing world changes continuously and sometimes it\’s kind of difficult to maintain a modern image. <span class="has-accent-1">Rebranding</span> is a good option for the business owners, but it is usually overlooked by them. But, you must know that maintaining the values, look and feel of your business can be very beneficial for the growth of your business.</div>',
+        newsText: ['<p>Let\’s check out some of the benefits of rebranding:</p><div class="ptf-spacer" style=" --ptf-xxl: 1.875rem;"></div><p>1.You can connect with new audience: this is one of the biggest advantage of rebranding, as when you refresh the feel and look of your brand, then you can reach to your potential customers. When you concentrate on newer aspects of business and marketing and promote your business in a correct manner, then you will definitely be noticed by all. Rebranding can fulfil your business needs and in this ever-evolving market you\’ll grow like a pro.</p><p>2.You will become different from your competitors: with the growth of your business, you might reach the same level as your competitors, thus you\’ll require to differentiate from your competition. Rebranding can help you in setting the exclusive offers of your company in the most effective way and hence, your approach will be unique. Differentiating your brand is necessary to be unique from others and to depict that you are an expert. By rebranding your company you\’ll provide your brand its own feel, look and voice and this will help in establishing your business as a leader.</p><p>3.You\’ll stay updated: there is only one simple goal of rebranding and that is keeping your brand updated. The trends of designs play a vital role in how the current and potential customers perceive your company. When you ensure that the look of your site is as per the most current trends, then your customer will pay attention to you and this will signal that you are well aware about the trends.</p><p>4.New goals, offers and products will be reflected: it is sometimes hard to display how your business grows, if your brand doesn\’t reflect it. If you are offering new products or you have set new goals for your business, then rebranding is the best alternative to do that. Although, sticking to the traditional services is necessary, you will be required to update them from time to time.</p>'],
+        newsTextTwo: '',
+        img: '/img/blog/single-post/content-image-1.png',
+        imgOne: '/img/blog/single-post/content-image-2.png',
+        imgTwo: '/img/blog/single-post/content-image-2.png',
+        url: '/news',
+        companyName: 'Abstract',
+        layout: './layouts/newsPost'
     })
 })
 
@@ -62,7 +107,7 @@ app.get('/services', (req, res) => {
     res.render('pages/services', {
         title: 'Services Page',
         titleTwo: '',
-        textDesc: '<p class="fz-18">We love crafting beautiful, smart and inspired work that focuses on a business’ goals and their customers. We do this across multiple touch points to help organizations achieve their goals.</p>',
+        textDesc: '<p class="fz-18">We love crafting beautiful, smart and inspired work that focuses on a business\’ goals and their customers. We do this across multiple touch points to help organizations achieve their goals.</p>',
         serviceIcon: ['lnil lnil-scan', 'lnil lnil-add-files', 'lnil lnil-grid-alt', 'lnil lnil-page'],
         services: ['Advertising', 'Branding', 'Digital', 'Print'],
         serviceLinks: ['/services/advertising', '/services/branding', '/services/digital', '/services/print'],
@@ -154,7 +199,7 @@ app.get('/services/branding/brand-guidelines', (req, res) => {
     res.render('pages/service-details', {
         title: 'Branding Guidelines',
         layout: './layouts/sidebarThree',
-        textDesc: '<h3 class="ptf-widget-title">With brands and businesses continuing to shift their marketing efforts to digital platforms, many question whether print advertising is still relevant.</h3><p class="fz-18">The fact is print advertising continues to be an invaluable medium for brands looking to connect with their target audience. The tactile characteristics of a printed publication offer an engaging experience unparalleled by online advertising.</p> <p class="fz-18">Despite this, print advertising is highly competitive, so it is crucial to ensure your advert stands out from the crowd and instantly captures readers’ attention. An eye-catching headline and compelling imagery, combined with a clear call to action, prompt a reaction from readers.</p> <p class="fz-18">On top of this, a clear strategy is key to maximizing the impact of your campaign. We specialize in planning and producing print advertising that is not only on brand but appeals and engages your target audience. If you’re thinking of commissioning an agency to come up with a big idea and design a successful print advertising campaign for your brand, please don’t hesitate to contact us.</p>',
+        textDesc: '<h3 class="ptf-widget-title">Once you\'ve created a great brand, you\'ll want to keep it that way. Brand guidelines may not sound as exciting as a logo design, but they tie together, cohesively all of your organization\'s elements.</h3><p class="fz-18">Brand guidelines are an excellent way of outlining how your brand should be applied and are a crucial part of any successful organization. To tell the story of a brand and maintain its feel, you need to ensure it is always portrayed consistently and accurately. Guidelines guarantee that everyone associated with an organization knows how the brand should be communicated.</p> <p class="fz-18">The extent of brand guidelines can differ. Typically, they cover how to use your logo, color palette, typefaces (for print and online), photography, and any graphic devices. Guidelines will set clear regulations so that your brand can easily be understood by designers, employees and marketers.</p> <p class="fz-18">As a branding agency, we have extensive experience creating guidelines that ensure your brand is communicated consistently and effectively. We take into account the vision for your brand and the ethos of your organization to create guidelines that stand the test of time.</p>',
         heroImg: '',
         serviceList: ['Campaigns', 'Online Advertising'],
         serviceLinks: ['/services/advertising/campaigns', '/services/advertising/online-advertising'],
@@ -370,6 +415,7 @@ app.get('/services/print/reports', (req, res) => {
         layout: './layouts/sidebarThree'
     })
 })
+
 
 // Listen on Port 5000
 app.listen(port, () => console.info(`App listening on port ${port}`))

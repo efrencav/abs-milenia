@@ -1,0 +1,46 @@
+<div class="container-xxl container-xxl--custom">
+    <!--Animated Block-->
+    <div class="ptf-animated-block" data-aos="fade" data-aos-delay="0">
+        <div class="ptf-isotope-grid" data-columns="4" data-layout="masonry" data-x-gap="15" data-y-gap="15" data-controls="#ptf-filter-masonry">
+            <div class="grid-sizer"></div>
+            <% for(var i=0; i<news.length; i++) {%>
+            <div class=" grid-item <%= filter[i] %>">
+                <!--Blog Post-->
+               
+                <article class="ptf-post ptf-post--style-2">
+                    <div class="ptf-post__media"><img src="<%= img[i] %>" alt="" loading="lazy">
+                        <div class="ptf-post__media__content">
+                            <header class="ptf-post__header">
+                                <div class="ptf-post__meta"><span class="cat"><%= category[i] %></span><span class="date"><%= date[i] %></span>
+                                </div>
+                                <h3 class="ptf-post__title"><%= newsTitle[i] %></h3>
+                            </header>
+                        </div>
+                    </div>
+                    <div class="ptf-post__content">
+                        <header class="ptf-post__header">
+                            <div class="ptf-post__meta"><span class="cat"><%= category[i] %></span><span class="date"><%= date[i] %></span>
+                            </div>
+                            <h3 class="ptf-post__title"><a href="<%= newsUrl[i] %>"><%= newsTitle[i] %></a>
+                            </h3>
+                        </header>
+                        <div class="ptf-post__excerpt">
+                            <p><%= news[i] %>...
+                            </p>
+                        </div>
+                        <footer class="ptf-post__footer"><a class="ptf-read-more-link" href="<%= newsUrl[i] %>">Continue</a></footer>
+                    </div>
+                </article>
+            </div>
+            <% } %>
+        </div>
+    </div>
+    <!--Spacer-->
+    <div class="ptf-spacer" style=" --ptf-xxl: 10rem; --ptf-md: 5rem;"></div>
+    <div class="text-center">
+        <!--Animated Block-->
+        <div class="ptf-animated-block" data-aos="fade" data-aos-delay="0"><a class="ptf-load-more" href="#">More</a>
+        </div>
+    </div>
+</div>
+        
