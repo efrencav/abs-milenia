@@ -25,7 +25,7 @@ app.get('', (req, res) => {
         companyName: 'Abstract',
         identifier: 'We are a branding, and digital<br> design studio in Houston.',
         titleTwo: '',
-        textDesc: '<p class="fz-18">We love crafting beautiful, smart and inspired work that focuses on a business’ goals and their customers. We do this across multiple touch points to help organizations achieve their goals.</p>',
+        textDesc: '<p class="fz-18">We love crafting beautiful, smart and inspired work that focuses on a business\’ goals and their customers. We do this across multiple touch points to help organizations achieve their goals.</p>',
         serviceIcon: ['lnil lnil-scan', 'lnil lnil-add-files', 'lnil lnil-grid-alt', 'lnil lnil-page'],
         services: ['Advertising', 'Branding', 'Digital', 'Print'],
         serviceLinks: ['/services/advertising', '/services/branding', '/services/digital', '/services/print'],
@@ -48,12 +48,12 @@ app.get('/about', (req, res) => {
 app.get('/news/', (req, res) => {
     res.render('pages/news', {
         title: 'News',
-        filter: ['filter-4', 'filter-3', 'filter-3', 'filter-1'],
+        filter: ['filter-4', 'filter-2', 'filter-3', 'filter-1'],
         category: ['Print', 'Branding', 'Branding', 'Advertising'],
         date: ['Dec 15, 2021', 'Dec 15, 2021', 'Dec 15, 2021', 'Dec 15, 2021'],
-        newsTitle: ['Importance of Brochures for Business Marketing', 'Benefits of Rebranding', 'Graphic Design Is Important To You More Than You Think', 'Tips For Designing a Brochure'],
-        news: ['The brochures of any business actually forms an integral part of printed marketing', 'The brochures of any business actually forms an integral part of printed marketing', 'The brochures of any business actually forms an integral part of printed marketing', 'The brochures of any business actually forms an integral part of printed marketing'],
-        newsUrl: ['/news/business-marketing', '/news/rebranding-benefits', '/news', '/news'],
+        newsTitle: ['Importance of Brochures for Business Marketing', 'Benefits of Rebranding', 'Your Business Needs Graphic Design More Than You Think', 'Tips For Designing a Brochure'],
+        news: ['The brochures of any business actually forms an integral part of printed marketing', 'The brochures of any business actually forms an integral part of printed marketing', 'Amidst the flourishing digital media world, businesses are increasingly looking for ways to connect with a target audience', 'The brochures of any business actually forms an integral part of printed marketing'],
+        newsUrl: ['/news/business-marketing', '/news/rebranding-benefits', '/news/graphic-design', '/news'],
         img: ['img/blog/masonry/post-1.png', 'img/blog/masonry/post-2.png', 'img/blog/masonry/post-3.png', 'img/blog/masonry/post-4.png'],
         companyName: 'Abstract',
         layout: './layouts/news'
@@ -69,9 +69,10 @@ app.get('/news/business-marketing', (req, res) => {
         newsExcerpt: '<div class="ptf-single-post__excerpt">The <span class="has-accent-1">brochure</span>s of any business actually forms an integral part of printed marketing in spite the increasing popularity of online marketing strategies. A good-looking brochure is a very necessary item for every business, it actually helps the businesses to grow.</div>',
         newsText: ['<p>Let\’s check out a few reasons that indicates that companies must invest in the brochure designing:</p><ul style="line-height: 2;"><li>The brochures can aid in capturing the attention of your potential customers, specifically in case your business is small or new and you are low on budget</li><li>Brochures are pocket friendly and effective as compared to any other marketing strategy. Your ads in the newspaper or magazine in a prime section will be very costly. The space of advertisement will shared by different businesses and thus, it will be tough to stand out</li><li>The booklets and the brochures, can actually focus completely on the offerings of the business, hence grabs the attention of the potential customers who look through them. The only thing that you need to do is to include informative and interesting content in the brochure and the images must be appropriate and call to action must be incorporated.</li><li>Brochures are very versatile and they can be used for any type of products and services and for different places in your office, like reception desk, your own cabin or may be in a promotional event.</li></ul><div class="ptf-spacer" style=" --ptf-xxl: 1.875rem;"></div><p>So, now you know how much <a class="text-decoration-underline has-accent-4" href="/services/print/brochure-design">brochure</a> design in Houston is important for your business.</p>'],
         newsTextTwo: '',
-        img: '/img/blog/single-post/content-image-1.png',
+        img: '/img/blog/single-post/post-media-1.png',
         imgOne: '/img/blog/single-post/content-image-2.png',
         imgTwo: '/img/blog/single-post/content-image-2.png',
+        imgThree: '/img/blog/single-post/content-image-2.png',
         url: '/news',
         companyName: 'Abstract',
         layout: './layouts/newsPost'
@@ -87,18 +88,57 @@ app.get('/news/rebranding-benefits', (req, res) => {
         newsExcerpt: '<div class="ptf-single-post__excerpt">The trends in the marketing world changes continuously and sometimes it\’s kind of difficult to maintain a modern image. <span class="has-accent-1">Rebranding</span> is a good option for the business owners, but it is usually overlooked by them. But, you must know that maintaining the values, look and feel of your business can be very beneficial for the growth of your business.</div>',
         newsText: ['<p>Let\’s check out some of the benefits of rebranding:</p><div class="ptf-spacer" style=" --ptf-xxl: 1.875rem;"></div><p>1.You can connect with new audience: this is one of the biggest advantage of rebranding, as when you refresh the feel and look of your brand, then you can reach to your potential customers. When you concentrate on newer aspects of business and marketing and promote your business in a correct manner, then you will definitely be noticed by all. Rebranding can fulfil your business needs and in this ever-evolving market you\’ll grow like a pro.</p><p>2.You will become different from your competitors: with the growth of your business, you might reach the same level as your competitors, thus you\’ll require to differentiate from your competition. Rebranding can help you in setting the exclusive offers of your company in the most effective way and hence, your approach will be unique. Differentiating your brand is necessary to be unique from others and to depict that you are an expert. By rebranding your company you\’ll provide your brand its own feel, look and voice and this will help in establishing your business as a leader.</p><p>3.You\’ll stay updated: there is only one simple goal of rebranding and that is keeping your brand updated. The trends of designs play a vital role in how the current and potential customers perceive your company. When you ensure that the look of your site is as per the most current trends, then your customer will pay attention to you and this will signal that you are well aware about the trends.</p><p>4.New goals, offers and products will be reflected: it is sometimes hard to display how your business grows, if your brand doesn\’t reflect it. If you are offering new products or you have set new goals for your business, then rebranding is the best alternative to do that. Although, sticking to the traditional services is necessary, you will be required to update them from time to time.</p>'],
         newsTextTwo: '',
-        img: '/img/blog/single-post/content-image-1.png',
+        img: '/img/blog/single-post/post-media-1.png',
         imgOne: '/img/blog/single-post/content-image-2.png',
         imgTwo: '/img/blog/single-post/content-image-2.png',
+        imgThree: '/img/blog/single-post/content-image-2.png',
         url: '/news',
         companyName: 'Abstract',
         layout: './layouts/newsPost'
     })
 })
 
+// Business Needs
+app.get('/news/graphic-design', (req, res) => {
+    res.render('pages/newsPost', {
+        title: 'Your Business Needs Graphic Design More Than You Think',
+        category: 'Print',
+        date: 'Dec 15, 2021',
+        newsExcerpt: '<div class="ptf-single-post__excerpt">Amidst the flourishing digital media world, businesses are increasingly looking for ways to connect with a target audience. As a business owner, you might have hundreds of issues and thousands of things to manage at work. It might take your focus off of the need for highly crafted<span class="has-accent-1"> graphic design</span>.</div>',
+        newsText: ['<p>You should know that graphic design plays an important role in making your business successful. Here are some points that will draw your attention to graphic design:</p><div class="ptf-spacer" style=" --ptf-xxl: 1.875rem;"></div><p><strong>Brand recognition:</strong> the things that help create the right brand image include a good looking logo and every other aspect of the business. The design of your site is required to target your potential customers, and for this, it needs to be functional, professional, and attractive. Your brand should be able to provide an instant connection with the fantastic products and services you offer. For this connection, the only thing you require is good graphic design.</p><p><strong>Uniforms, company webpages, publications, stationery, and other items surround your employees.</strong> To provide a happy and healthy workplace, you will need to band your company together behind the design that you have selected for your brand. When building your company\'s identity, you need to focus on the fact that they are committed to the brand. If you have an excellent graphic design, then it can strengthen the sense of commitment.</p><p><strong>Professionalism:</strong> if you need your business to leave a positive first impression on your clients or vendors. You need to focus on your logo, representing your business, but all this depends on the fact that you have designed it in the most effective possible manner. If your logo looks cheap, then it won\'t be easy to create a positive impression on the client.</p><p><strong>Communication:</strong> the functions of high-quality graphic design are beyond the look of your website and logo. Graphic design can help you create visuals, which will display your ideas most effectively. You can use professionally designed images and texts to avoid any misunderstanding and to communicate your thoughts with your customer.</p>'],
+        newsTextTwo: '<p>If you want the most effective solutions for your business and the most professional graphic design services in Houston, TX, click on the link given below.</p>',
+        img: '/img/blog/single-post/post-media-1.png',
+        imgOne: '/img/blog/single-post/content-image-2.png',
+        imgTwo: '/img/blog/single-post/content-image-2.png',
+        imgThree: '/img/blog/single-post/content-image-2.png',
+        url: '/news',
+        companyName: 'Abstract',
+        layout: './layouts/newsPost'
+    })
+})
+// ============ PORTFOLIO============
+
 app.get('/works', (req, res) => {
     res.render('pages/works', {
         title: 'Works',
+        filter: ['filter-1 filter-4 filter-7', 'filter-2 filter-5', 'filter-3 filter-6', 'filter-1 filter-4 filter-7'],
+        category: ['Branding', 'Illustration', 'Branding, UI/UX', 'Branding, Packing, Motion'],
+        workLink: ['/works', '/works', '/works', '/works'],
+        toolTipImg: ['/img/portfolio/grid/work-1.png', '/img/portfolio/grid/work-2.png', '/img/portfolio/grid/work-3.png', '/img/portfolio/grid/work-4.png'],
+        workTitle: ['Supro Online Store', 'LW Poster', 'Lewis Studio Website', 'SPA Brand'],
+        workDate: ['2021', '2021', '2020', '2019'],
+        layout: './layouts/portfolio'
+    })
+})
+app.get('/works/muscle-rehab', (req, res) => {
+    res.render('pages/works', {
+        title: 'Works',
+        filter: '',
+        category: '',
+        workLink: '',
+        toolTipImg: '',
+        workTitle: '',
+        workDate: '',
         layout: './layouts/portfolio'
     })
 })
@@ -296,6 +336,18 @@ app.get('/services/digital', (req, res) => {
 app.get('/services/digital/cms', (req, res) => {
     res.render('pages/service-details', {
         title: 'Content Management Systems',
+        titleTwo: '',
+        serviceList: '',
+        textDesc: '<h3 class="ptf-widget-title"></h3><p class="fz-18"></p> <p class="fz-18"></p>',
+        serviceIcon: ['', '', '', '', '', ''],
+        services: ['', '', '', '', '', ''],
+        serviceLinks: ['', '', '', '', '', ''],
+        snipText: ['',
+            '',
+            '',
+            '',
+            '',
+            ''],
         layout: './layouts/sidebarThree'
     })
 })
@@ -304,6 +356,18 @@ app.get('/services/digital/cms', (req, res) => {
 app.get('/services/digital/e-commerce', (req, res) => {
     res.render('pages/service-details', {
         title: 'E-Commerce',
+        titleTwo: '',
+        serviceList: '',
+        textDesc: '<h3 class="ptf-widget-title"></h3><p class="fz-18"></p> <p class="fz-18"></p>',
+        serviceIcon: ['', '', '', '', '', ''],
+        services: ['', '', '', '', '', ''],
+        serviceLinks: ['', '', '', '', '', ''],
+        snipText: ['',
+            '',
+            '',
+            '',
+            '',
+            ''],
         layout: './layouts/sidebarThree'
     })
 })
@@ -312,6 +376,18 @@ app.get('/services/digital/e-commerce', (req, res) => {
 app.get('/services/digital/email-marketing', (req, res) => {
     res.render('pages/service-details', {
         title: 'Email Marketing',
+        titleTwo: '',
+        serviceList: '',
+        textDesc: '<h3 class="ptf-widget-title"></h3><p class="fz-18"></p> <p class="fz-18"></p>',
+        serviceIcon: ['', '', '', '', '', ''],
+        services: ['', '', '', '', '', ''],
+        serviceLinks: ['', '', '', '', '', ''],
+        snipText: ['',
+            '',
+            '',
+            '',
+            '',
+            ''],
         layout: './layouts/sidebarThree'
     })
 })
@@ -320,6 +396,18 @@ app.get('/services/digital/email-marketing', (req, res) => {
 app.get('/services/digital/social-media', (req, res) => {
     res.render('pages/service-details', {
         title: 'Social Media',
+        titleTwo: '',
+        serviceList: '',
+        textDesc: '<h3 class="ptf-widget-title"></h3><p class="fz-18"></p> <p class="fz-18"></p>',
+        serviceIcon: ['', '', '', '', '', ''],
+        services: ['', '', '', '', '', ''],
+        serviceLinks: ['', '', '', '', '', ''],
+        snipText: ['',
+            '',
+            '',
+            '',
+            '',
+            ''],
         layout: './layouts/sidebarThree'
     })
 })
@@ -328,6 +416,18 @@ app.get('/services/digital/social-media', (req, res) => {
 app.get('/services/digital/seo', (req, res) => {
     res.render('pages/service-details', {
         title: 'Search Engine Optimization',
+        titleTwo: '',
+        serviceList: '',
+        textDesc: '<h3 class="ptf-widget-title"></h3><p class="fz-18"></p> <p class="fz-18"></p>',
+        serviceIcon: ['', '', '', '', '', ''],
+        services: ['', '', '', '', '', ''],
+        serviceLinks: ['', '', '', '', '', ''],
+        snipText: ['',
+            '',
+            '',
+            '',
+            '',
+            ''],
         layout: './layouts/sidebarThree'
     })
 })
@@ -336,6 +436,7 @@ app.get('/services/digital/seo', (req, res) => {
 app.get('/services/digital/ux-design', (req, res) => {
     res.render('pages/service-details', {
         title: 'User Experience UX Design',
+
         layout: './layouts/sidebarThree'
     })
 })
@@ -344,6 +445,7 @@ app.get('/services/digital/ux-design', (req, res) => {
 app.get('/services/digital/web-development', (req, res) => {
     res.render('pages/service-details', {
         title: 'Web Development',
+
         layout: './layouts/sidebarThree'
     })
 })
@@ -352,6 +454,7 @@ app.get('/services/digital/web-development', (req, res) => {
 app.get('/services/digital/web-design', (req, res) => {
     res.render('pages/service-details', {
         title: 'Web Design',
+
         layout: './layouts/sidebarThree'
     })
 })
@@ -380,6 +483,7 @@ app.get('/services/print', (req, res) => {
 app.get('/services/print/brochure-design', (req, res) => {
     res.render('pages/service-details', {
         title: 'Brochure Design',
+
         layout: './layouts/sidebarThree'
     })
 })
@@ -388,6 +492,7 @@ app.get('/services/print/brochure-design', (req, res) => {
 app.get('/services/print/direct-mail', (req, res) => {
     res.render('pages/service-details', {
         title: 'Direct Mail',
+
         layout: './layouts/sidebarThree'
     })
 })
@@ -396,6 +501,7 @@ app.get('/services/print/direct-mail', (req, res) => {
 app.get('/services/print/magazine-design', (req, res) => {
     res.render('pages/service-details', {
         title: 'Magazine Design',
+
         layout: './layouts/sidebarThree'
     })
 })
@@ -404,6 +510,7 @@ app.get('/services/print/magazine-design', (req, res) => {
 app.get('/services/print/packaging', (req, res) => {
     res.render('pages/service-details', {
         title: 'Packaging',
+
         layout: './layouts/sidebarThree'
     })
 })
@@ -412,6 +519,7 @@ app.get('/services/print/packaging', (req, res) => {
 app.get('/services/print/reports', (req, res) => {
     res.render('pages/service-details', {
         title: 'Reports',
+
         layout: './layouts/sidebarThree'
     })
 })

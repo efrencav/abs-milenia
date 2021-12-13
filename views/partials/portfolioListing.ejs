@@ -33,123 +33,19 @@
             <div class="ptf-animated-block" data-aos="fade" data-aos-delay="0">
                 <div class="ptf-isotope-grid" data-columns="1" data-layout="masonry" data-x-gap="0" data-y-gap="0" data-controls="#ptf-filter-listing">
                     <div class="grid-sizer"></div>
-                    <div class=" grid-item filter-1 filter-4 filter-7">
+                    <% for(var i=0; i<category.length; i++) {%>
+                    <div class=" grid-item <%- filter[i] %>">
                         <!--Portfolio Item-->
-                        <article class="ptf-work ptf-work--style-4"><a class="ptf-work__link" href="portfolio-showcase-1.html" data-tooltip-image="img/portfolio/grid/work-1.png"></a>
-                            <div class="ptf-work__category">Branding
+                        <article class="ptf-work ptf-work--style-4"><a class="ptf-work__link" href="<%- workLink[i] %>" data-tooltip-image="<%- toolTipImg[i] %>"></a>
+                            <div class="ptf-work__category"><%- category[i] %>
                             </div>
-                            <h4 class="ptf-work__title">Supro Online Store
+                            <h4 class="ptf-work__title"><%- workTitle[i] %>
                             </h4>
-                            <div class="ptf-work__date">2021
+                            <div class="ptf-work__date"><%- workDate[i] %>
                             </div>
                         </article>
                     </div>
-                    <div class=" grid-item filter-2 filter-5">
-                        <!--Portfolio Item-->
-                        <article class="ptf-work ptf-work--style-4"><a class="ptf-work__link" href="portfolio-showcase-1.html" data-tooltip-image="img/portfolio/grid/work-2.png"></a>
-                            <div class="ptf-work__category">Illustration
-                            </div>
-                            <h4 class="ptf-work__title">LW Poster
-                            </h4>
-                            <div class="ptf-work__date">2020
-                            </div>
-                        </article>
-                    </div>
-                    <div class=" grid-item filter-3 filter-6">
-                        <!--Portfolio Item-->
-                        <article class="ptf-work ptf-work--style-4"><a class="ptf-work__link" href="portfolio-showcase-1.html" data-tooltip-image="img/portfolio/grid/work-3.png"></a>
-                            <div class="ptf-work__category">Branding, UI/UX
-                            </div>
-                            <h4 class="ptf-work__title">Lewis Studio Website
-                            </h4>
-                            <div class="ptf-work__date">2020
-                            </div>
-                        </article>
-                    </div>
-                    <div class=" grid-item filter-1 filter-4 filter-7">
-                        <!--Portfolio Item-->
-                        <article class="ptf-work ptf-work--style-4"><a class="ptf-work__link" href="portfolio-showcase-1.html" data-tooltip-image="img/portfolio/grid/work-4.png"></a>
-                            <div class="ptf-work__category">Branding, Packing, Motion
-                            </div>
-                            <h4 class="ptf-work__title">SPA Brand
-                            </h4>
-                            <div class="ptf-work__date">2021
-                            </div>
-                        </article>
-                    </div>
-                    <div class=" grid-item filter-2 filter-5">
-                        <!--Portfolio Item-->
-                        <article class="ptf-work ptf-work--style-4"><a class="ptf-work__link" href="portfolio-showcase-1.html" data-tooltip-image="img/portfolio/work-1.png"></a>
-                            <div class="ptf-work__category">UI/UX
-                            </div>
-                            <h4 class="ptf-work__title">Taskly Dashboard
-                            </h4>
-                            <div class="ptf-work__date">2020
-                            </div>
-                        </article>
-                    </div>
-                    <div class=" grid-item filter-2 filter-5">
-                        <!--Portfolio Item-->
-                        <article class="ptf-work ptf-work--style-4"><a class="ptf-work__link" href="portfolio-showcase-1.html" data-tooltip-image="img/portfolio/work-2.png"></a>
-                            <div class="ptf-work__category">Product
-                            </div>
-                            <h4 class="ptf-work__title">Film &amp; Art Festival
-                            </h4>
-                            <div class="ptf-work__date">2020
-                            </div>
-                        </article>
-                    </div>
-                    <div class=" grid-item filter-1 filter-4 filter-7">
-                        <!--Portfolio Item-->
-                        <article class="ptf-work ptf-work--style-4"><a class="ptf-work__link" href="portfolio-showcase-1.html" data-tooltip-image="img/portfolio/work-3.png"></a>
-                            <div class="ptf-work__category">Branding, Packaging
-                            </div>
-                            <h4 class="ptf-work__title">Dark Wishky Wine
-                            </h4>
-                            <div class="ptf-work__date">2020
-                            </div>
-                        </article>
-                    </div>
-                    <div class=" grid-item filter-2 filter-5">
-                        <!--Portfolio Item-->
-                        <article class="ptf-work ptf-work--style-4"><a class="ptf-work__link" href="portfolio-showcase-1.html" data-tooltip-image="img/portfolio/work-4.png"></a>
-                            <div class="ptf-work__category">Illustration
-                            </div>
-                            <h4 class="ptf-work__title">Swiss Style Poster
-                            </h4>
-                            <div class="ptf-work__date">2019
-                            </div>
-                        </article>
-                    </div>
-                    <div class=" grid-item filter-3 filter-6">
-                        <!--Portfolio Item-->
-                        <article class="ptf-work ptf-work--style-4"><a class="ptf-work__link" href="portfolio-showcase-1.html" data-tooltip-image="img/portfolio/work-5.png"></a>
-                            <div class="ptf-work__category">UI/UX
-                            </div>
-                            <h4 class="ptf-work__title">Liarch Architecture Firm
-                            </h4>
-                            <div class="ptf-work__date">2019
-                            </div>
-                        </article>
-                    </div>
-                    <div class=" grid-item filter-1 filter-4 filter-7">
-                        <!--Portfolio Item-->
-                        <article class="ptf-work ptf-work--style-4"><a class="ptf-work__link" href="portfolio-showcase-1.html" data-tooltip-image="img/portfolio/work-6.png"></a>
-                            <div class="ptf-work__category">Branding, Packaging
-                            </div>
-                            <h4 class="ptf-work__title">FG Print Brand
-                            </h4>
-                            <div class="ptf-work__date">2019
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-            <!--Spacer-->
-            <div class="ptf-spacer" style=" --ptf-xxl: 10rem; --ptf-md: 5rem;"></div>
-            <div class="text-center">
-                <!--Animated Block-->
-                <div class="ptf-animated-block" data-aos="fade" data-aos-delay="0"><a class="ptf-load-more" href="#">More</a>
+                    <% } %>
                 </div>
             </div>
         </div>
