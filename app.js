@@ -18,6 +18,8 @@ app.use(expressLayouts)
 app.set('layout', './layouts/full-width')
 app.set('view engine', 'ejs')
 
+app.locals.newsdata = require('./data/news.json')
+
 // Routes
 app.get('', (req, res) => {
     res.render('pages/index', {
@@ -47,18 +49,11 @@ app.get('/about', (req, res) => {
 // ============ NEWS ============
 app.get('/news/', (req, res) => {
     res.render('pages/news', {
-        title: 'News',
-        filter: ['filter-4', 'filter-2', 'filter-3', 'filter-1'],
-        category: ['Print', 'Branding', 'Branding', 'Advertising'],
-        date: ['Dec 15, 2021', 'Dec 15, 2021', 'Dec 15, 2021', 'Dec 15, 2021'],
-        newsTitle: ['Importance of Brochures for Business Marketing', 'Benefits of Rebranding', 'Your Business Needs Graphic Design More Than You Think', 'Tips For Designing a Brochure'],
-        news: ['The brochures of any business actually forms an integral part of printed marketing', 'The brochures of any business actually forms an integral part of printed marketing', 'Amidst the flourishing digital media world, businesses are increasingly looking for ways to connect with a target audience', 'The brochures of any business actually forms an integral part of printed marketing'],
-        newsUrl: ['/news/business-marketing', '/news/rebranding-benefits', '/news/graphic-design', '/news'],
-        img: ['img/blog/masonry/post-1.png', 'img/blog/masonry/post-2.png', 'img/blog/masonry/post-3.png', 'img/blog/masonry/post-4.png'],
         companyName: 'Abstract',
         layout: './layouts/news'
     })
 })
+// res.render('pages/news', { data: 'data/news.json' });
 
 // Business Marketing Brochure
 app.get('/news/business-marketing', (req, res) => {
