@@ -30,6 +30,24 @@
         "Amidst the flourishing digital media world, businesses are increasingly looking for ways to connect with a target audience",
         "The brochures of any business actually forms an integral part of printed marketing"
     ],
+    "newsExcerpt": [
+        "",
+        "",
+        "",
+        ""
+    ],
+    "newsText": [
+        "",
+        "",
+        "",
+        ""
+    ],
+    "newsTextTwo": [
+        "",
+        "",
+        "",
+        ""
+    ],
     "newsUrl": [
         "/news/business-marketing",
         "/news/rebranding-benefits",
@@ -42,6 +60,22 @@
         "img/blog/masonry/post-3.png",
         "img/blog/masonry/post-4.png"
     ],
-    "companyName": "Abstract",
-    "layout": "./layouts/news"
+    "imgOne": [
+        "",
+        "",
+        "",
+        ""
+    ],
+    "imgTwo": [
+        "",
+        "",
+        "",
+        ""
+    ],
+    "imgThree": [
+        "",
+        "",
+        "",
+        ""
+    ]
 }
