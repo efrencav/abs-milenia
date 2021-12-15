@@ -7,19 +7,19 @@
                 <div class="col-xl-9">
                     <!--Animated Block-->
                     <div class="ptf-animated-block" data-aos="fade" data-aos-delay="0">
-                        <h1 class="fz-230 fz-130--lg fz-90--md"><%- companyName %></h1>
+                        <h1 class="fz-230 fz-130--lg fz-90--md"><%- homedata.companyName %></h1>
                     </div>
                     <!--Spacer-->
                     <div class="ptf-spacer" style=" --ptf-xxl: 0.625rem;"></div>
                     <!--Animated Block-->
                     <div class="ptf-animated-block" data-aos="fade" data-aos-delay="100">
-                        <p class="fz-40 fw-bold lh-1p3 text-uppercase has-white-color"><%- identifier %></p>
+                        <p class="fz-40 fw-bold lh-1p3 text-uppercase has-white-color"><%- homedata.identifier %></p>
                     </div>
                     <!--Spacer-->
                     <div class="ptf-spacer" style=" --ptf-xxl: 8.125rem; --ptf-md: 4.0625rem;"></div>
                     <!--Animated Block-->
                     <div class="ptf-animated-block" data-aos="fade" data-aos-delay="200">
-                        <p class="fz-70 fz-40--md fw-extrabold lh-1p1 has-white-color">We build brand & digital partnerships that help connect your customers to your business with design.</p>
+                        <p class="fz-70 fz-40--md fw-extrabold lh-1p1 has-white-color"><%- homedata.textDesc %></p>
                     </div>
                     <!--Spacer-->
                     <div class="ptf-spacer" style=" --ptf-xxl: 9.375rem; --ptf-md: 4.6875rem;"></div>
@@ -32,13 +32,13 @@
                                     <div class="ptf-divider"></div>
                                     <!--Spacer-->
                                     <div class="ptf-spacer" style=" --ptf-xxl: 4.375rem; --ptf-md: 2.1875rem;"></div>
-                                    <p class="fz-24 has-white-color">We are idea-driven, working with a strong focus on advertising, branding, digital, and print design. We love crafting smart and inspired design work that focuses on a business’s goals and its customers. We do this across multiple touchpoints to help organizations achieve their goals.</p>
+                                    <p class="fz-24 has-white-color"><%- homedata.textDescTwo %></p>
                                 </div>
                                 <!--Spacer-->
                                 <div class="ptf-spacer" style=" --ptf-xxl: 6.875rem; --ptf-md: 3.4375rem;"></div>
                                 <!--Animated Block-->
                                 <div class="ptf-animated-block" data-aos="fade" data-aos-delay="0">
-                                    <!--Button--><a class="ptf-btn ptf-btn--primary ptf-btn--inversed" href="/about" target="_self">Learn More</a>
+                                    <!--Button--><a class="ptf-btn ptf-btn--primary ptf-btn--inversed" href="<%- homedata.textDescTwoLink %>" target="_self">Learn More</a>
                                 </div>
                             </div>
                         </div>

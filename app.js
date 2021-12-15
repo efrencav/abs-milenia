@@ -18,7 +18,12 @@ app.use(expressLayouts)
 app.set('layout', './layouts/full-width')
 app.set('view engine', 'ejs')
 
+// Local Variables
 app.locals.newsdata = require('./data/news.json')
+app.locals.homedata = require('./data/home.json')
+
+// Local Variables for Partials
+app.locals.approachdata = require('./data/partials/approach.json')
 
 // Routes
 app.get('', (req, res) => {

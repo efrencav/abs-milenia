@@ -4,91 +4,29 @@
     <div class="container-xxl">
         <!--Animated Block-->
         <div class="ptf-animated-block" data-aos="fade" data-aos-delay="0">
-            <h1 class="large-heading">Our Approach</h1>
+            <h1 class="large-heading"><%- approachdata.partialTitle %></h1>
         </div>
         <!--Spacer-->
         <div class="ptf-spacer" style=" --ptf-xxl: 7.5rem; --ptf-md: 3.75rem;"></div>
         <div class="row" style="--bs-gutter-x: 3.75rem; --bs-gutter-y: 7.5rem">
+            <% for(var i=0; i<approachdata.number.length; i++) {%>
             <div class="col-xl-4 col-lg-6">
                 <!--Animated Block-->
                 <div class="ptf-animated-block" data-aos="fade" data-aos-delay="0">
                     <!--Approach Box-->
                     <div class="ptf-approach-box" style="--ptf-title-color: var(--ptf-color-white);">
-                        <div class="ptf-approach-box__subtitle">One
+                        <div class="ptf-approach-box__subtitle"><%- approachdata.number[i] %>
                         </div>
-                        <h3 class="ptf-approach-box__title h1">Research
+                        <h3 class="ptf-approach-box__title h1"><%- approachdata.title[i] %>
                         </h3>
                         <div class="ptf-approach-box__content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit cras tempus. Libero ligula, vitae accumsan tortor varius nec. Ut luctus maximus dolor. Nunc sed diam sit amet urna fermentum accumsan vitae vitae diam.
+                            <p><%- approachdata.content[i] %>
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-6">
-                <!--Animated Block-->
-                <div class="ptf-animated-block" data-aos="fade" data-aos-delay="100">
-                    <!--Approach Box-->
-                    <div class="ptf-approach-box" style="--ptf-title-color: var(--ptf-color-white);">
-                        <div class="ptf-approach-box__subtitle">Two
-                        </div>
-                        <h3 class="ptf-approach-box__title h1">Concept
-                        </h3>
-                        <div class="ptf-approach-box__content">
-                            <p>Donec venenatis consequat libero, quis auctor nunc volutpat quis. Proin at ipsum id magna dapibus dictum eget lobortis magna. Fusce et ligula non tellus vulputate condimentum.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6">
-                <!--Animated Block-->
-                <div class="ptf-animated-block" data-aos="fade" data-aos-delay="200">
-                    <!--Approach Box-->
-                    <div class="ptf-approach-box" style="--ptf-title-color: var(--ptf-color-white);">
-                        <div class="ptf-approach-box__subtitle">Three
-                        </div>
-                        <h3 class="ptf-approach-box__title h1">Development
-                        </h3>
-                        <div class="ptf-approach-box__content">
-                            <p>Vivamus vel sollicitudin sem, id sagittis justo. Nam non magna eleifend, tempus nisl quis, commod diam. Morbi gravida ut nulla non porttitor. Suspendis eget arcu eu ex dignissim faucibus. Nullam et luctus tortor. Quisque eu risus vel turpis tempuss.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6">
-                <!--Animated Block-->
-                <div class="ptf-animated-block" data-aos="fade" data-aos-delay="0">
-                    <!--Approach Box-->
-                    <div class="ptf-approach-box" style="--ptf-title-color: var(--ptf-color-white);">
-                        <div class="ptf-approach-box__subtitle">Four
-                        </div>
-                        <h3 class="ptf-approach-box__title h1">Test
-                        </h3>
-                        <div class="ptf-approach-box__content">
-                            <p>Suspendisse vel magna vitae nunc consequat eleifend. Aenean iaculis est eget turpis lacinia egest dictum ipsum sollicitudin.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6">
-                <!--Animated Block-->
-                <div class="ptf-animated-block" data-aos="fade" data-aos-delay="100">
-                    <!--Approach Box-->
-                    <div class="ptf-approach-box" style="--ptf-title-color: var(--ptf-color-white);">
-                        <div class="ptf-approach-box__subtitle">Five
-                        </div>
-                        <h3 class="ptf-approach-box__title h1">Hand Over
-                        </h3>
-                        <div class="ptf-approach-box__content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit cras tempus. Libero ligula, vitae accumsan tortor varius nec. Ut luctus maximus dolor. Nunc sed diam sit amet urna fermentum accumsan vitae vitae diam.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <% } %>
         </div>
     </div>
     <!--Spacer-->

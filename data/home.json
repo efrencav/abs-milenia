@@ -1,0 +1,33 @@
+{
+    "title": "Branding and Digital design studio.",
+    "companyName": "Abstract",
+    "identifier": "We are a branding, and digital<br> design studio in Houston.",
+    "titleTwo": "",
+    "textDesc": "We build brand & digital partnerships that help connect your customers to your business with design.",
+    "textDescTwo": "We are idea-driven, working with a strong focus on advertising, branding, digital, and print design. We love crafting smart and inspired design work that focuses on a business’s goals and its customers. We do this across multiple touchpoints to help organizations achieve their goals.",
+    "textDescTwoLink": "/about",
+    "serviceIcon": [
+        "lnil lnil-scan",
+        "lnil lnil-add-files",
+        "lnil lnil-grid-alt",
+        "lnil lnil-page"
+    ],
+    "services": [
+        "Advertising",
+        "Branding",
+        "Digital",
+        "Print"
+    ],
+    "serviceLinks": [
+        "/services/advertising",
+        "/services/branding",
+        "/services/digital",
+        "/services/print"
+    ],
+    "snipText": [
+        "We know that successful brands establish an emotional connection with consumers that can prove very difficult down.",
+        "The fact is, branding matters. While successful brands stand the test of time, many others fizzle out and fail to make an impact.",
+        "Whether you need a responsive website design with a content management system, a social media campaign or an email markeing campaing",
+        "Tactile and familiar, there are few mediums that can rival how engaging a beautiful piece of print can be."
+    ]
+}
