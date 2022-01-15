@@ -6,7 +6,7 @@
                 <div class="col-xl-10">
                     <!--Animated Block-->
                     <div class="ptf-animated-block" data-aos="fade" data-aos-delay="0">
-                        <h1 class="large-heading">Portfolio</h1>
+                        <h1 class="large-heading"><%- worksdata.title %></h1>
                     </div>
                 </div>
             </div>
@@ -33,15 +33,15 @@
             <div class="ptf-animated-block" data-aos="fade" data-aos-delay="0">
                 <div class="ptf-isotope-grid" data-columns="1" data-layout="masonry" data-x-gap="0" data-y-gap="0" data-controls="#ptf-filter-listing">
                     <div class="grid-sizer"></div>
-                    <% for(var i=0; i<category.length; i++) {%>
-                    <div class=" grid-item <%- filter[i] %>">
+                    <% for(var i=0; i<worksdata.category.length; i++) {%>
+                    <div class=" grid-item <%- worksdata.filter[i] %>">
                         <!--Portfolio Item-->
-                        <article class="ptf-work ptf-work--style-4"><a class="ptf-work__link" href="<%- workLink[i] %>" data-tooltip-image="<%- toolTipImg[i] %>"></a>
-                            <div class="ptf-work__category"><%- category[i] %>
+                        <article class="ptf-work ptf-work--style-4"><a class="ptf-work__link" href="<%- worksdata.workLink[i] %>" data-tooltip-image="<%- worksdata.toolTipImg[i] %>"></a>
+                            <div class="ptf-work__category"><%- worksdata.category[i] %>
                             </div>
-                            <h4 class="ptf-work__title"><%- workTitle[i] %>
+                            <h4 class="ptf-work__title"><%- worksdata.workTitle[i] %>
                             </h4>
-                            <div class="ptf-work__date"><%- workDate[i] %>
+                            <div class="ptf-work__date"><%- worksdata.workDate[i] %>
                             </div>
                         </article>
                     </div>

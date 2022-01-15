@@ -1,0 +1,45 @@
+{
+    "title": "Works",
+    "filter": [
+        "filter-1 filter-4 filter-7",
+        "filter-2 filter-5",
+        "filter-3 filter-6",
+        "filter-1 filter-4 filter-7",
+        "filter-1 filter-4 filter-7"
+    ],
+    "category": [
+        "Branding",
+        "Illustration",
+        "Branding, UI/UX",
+        "Branding, Packing, Motion",
+        "Branding, Packing, Motion"
+    ],
+    "workLink": [
+        "/works",
+        "/works",
+        "/works",
+        "/works",
+        "/works"
+    ],
+    "toolTipImg": [
+        "/img/portfolio/grid/work-1.png",
+        "/img/portfolio/grid/work-2.png",
+        "/img/portfolio/grid/work-3.png",
+        "/img/portfolio/grid/work-4.png",
+        "/img/portfolio/grid/work-4.png"
+    ],
+    "workTitle": [
+        "Supro Online Store",
+        "LW Poster",
+        "Lewis Studio Website",
+        "SPA Brand",
+        "SPA Brand"
+    ],
+    "workDate": [
+        "2021",
+        "2021",
+        "2020",
+        "2019",
+        "2019"
+    ]
+}

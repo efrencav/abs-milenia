@@ -1,4 +1,5 @@
 // Imports
+const { application } = require('express')
 const express = require('express')
 const expressLayouts = require('express-ejs-layouts')
 
@@ -19,8 +20,9 @@ app.set('layout', './layouts/full-width')
 app.set('view engine', 'ejs')
 
 // Local Variables
-app.locals.newsdata = require('./data/news.json')
 app.locals.homedata = require('./data/home.json')
+app.locals.newsdata = require('./data/news.json')
+app.locals.worksdata = require('./data/works.json')
 
 // Local Variables for Partials
 app.locals.approachdata = require('./data/partials/approach.json')
@@ -30,9 +32,8 @@ app.get('', (req, res) => {
     res.render('pages/index', {
         title: 'Branding and Digital design studio.',
         companyName: 'Abstract',
-        identifier: 'We are a branding, and digital<br> design studio in Houston.',
         titleTwo: '',
-        textDesc: '<p class="fz-18">We love crafting beautiful, smart and inspired work that focuses on a business\’ goals and their customers. We do this across multiple touch points to help organizations achieve their goals.</p>',
+        textDesc: '',
         serviceIcon: ['lnil lnil-scan', 'lnil lnil-add-files', 'lnil lnil-grid-alt', 'lnil lnil-page'],
         services: ['Advertising', 'Branding', 'Digital', 'Print'],
         serviceLinks: ['/services/advertising', '/services/branding', '/services/digital', '/services/print'],
@@ -66,7 +67,7 @@ app.get('/news/business-marketing', (req, res) => {
         title: 'Importance of Brochures for Business Marketing',
         category: 'Print',
         date: 'Dec 15, 2021',
-        newsExcerpt: '<div class="ptf-single-post__excerpt">The <span class="has-accent-1">brochure</span>s of any business actually forms an integral part of printed marketing in spite the increasing popularity of online marketing strategies. A good-looking brochure is a very necessary item for every business, it actually helps the businesses to grow.</div>',
+        newsExcerpt: '',
         newsText: ['<p>Let\’s check out a few reasons that indicates that companies must invest in the brochure designing:</p><ul style="line-height: 2;"><li>The brochures can aid in capturing the attention of your potential customers, specifically in case your business is small or new and you are low on budget</li><li>Brochures are pocket friendly and effective as compared to any other marketing strategy. Your ads in the newspaper or magazine in a prime section will be very costly. The space of advertisement will shared by different businesses and thus, it will be tough to stand out</li><li>The booklets and the brochures, can actually focus completely on the offerings of the business, hence grabs the attention of the potential customers who look through them. The only thing that you need to do is to include informative and interesting content in the brochure and the images must be appropriate and call to action must be incorporated.</li><li>Brochures are very versatile and they can be used for any type of products and services and for different places in your office, like reception desk, your own cabin or may be in a promotional event.</li></ul><div class="ptf-spacer" style=" --ptf-xxl: 1.875rem;"></div><p>So, now you know how much <a class="text-decoration-underline has-accent-4" href="/services/print/brochure-design">brochure</a> design in Houston is important for your business.</p>'],
         newsTextTwo: '',
         img: '/img/blog/single-post/post-media-1.png',
@@ -121,12 +122,6 @@ app.get('/news/graphic-design', (req, res) => {
 app.get('/works', (req, res) => {
     res.render('pages/works', {
         title: 'Works',
-        filter: ['filter-1 filter-4 filter-7', 'filter-2 filter-5', 'filter-3 filter-6', 'filter-1 filter-4 filter-7'],
-        category: ['Branding', 'Illustration', 'Branding, UI/UX', 'Branding, Packing, Motion'],
-        workLink: ['/works', '/works', '/works', '/works'],
-        toolTipImg: ['/img/portfolio/grid/work-1.png', '/img/portfolio/grid/work-2.png', '/img/portfolio/grid/work-3.png', '/img/portfolio/grid/work-4.png'],
-        workTitle: ['Supro Online Store', 'LW Poster', 'Lewis Studio Website', 'SPA Brand'],
-        workDate: ['2021', '2021', '2020', '2019'],
         layout: './layouts/portfolio'
     })
 })
